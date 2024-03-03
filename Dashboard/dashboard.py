@@ -14,7 +14,7 @@ for col in datetime_cols:
 # Sidebar
 with st.sidebar:
     st.write('# Projek Akhir Muhammad Raihan Ramadhan :sparkles:')
-    st.image("bangkit.jpg", caption="Bangkit 2024", use_column_width=True,)
+    st.image("Dashboard/bangkit.jpg", caption="Bangkit 2024", use_column_width=True,)
     min_date = all_df["order_approved_at"].min().date()
     max_date = all_df["order_approved_at"].max().date()
     start_date = st.date_input(label="Start Date", value=min_date, min_value=min_date, max_value=max_date)
