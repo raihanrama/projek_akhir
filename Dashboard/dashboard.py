@@ -4,7 +4,7 @@ import seaborn as sns
 import streamlit as st
 
 # Dataset
-all_df = pd.read_csv(r"D:\raihan\BANGKIT SEMESTER 6\DICODING\submission\all_data.csv")
+all_df = pd.read_csv("all_data.csv")
 
 # Konversi datetime_cols ke dalam tipe data datetime
 datetime_cols = ["order_approved_at", "order_delivered_carrier_date", "order_delivered_customer_date", "order_estimated_delivery_date", "order_purchase_timestamp", "shipping_limit_date"]
